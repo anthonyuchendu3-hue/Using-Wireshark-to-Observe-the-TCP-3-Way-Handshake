@@ -1,0 +1,12 @@
+# Part 2: Analyze the Packets using Wireshark
+
+# [H1 xterm] Start Wireshark (click OK on the superuser warning)
+wireshark &
+
+# [Wireshark GUI]
+#   File > Open > /home/analyst/capture.pcap
+#   Display filter:
+tcp
+
+# Then inspect frames 1, 2 and 3:
+#   select the packet > expand "Transmission Control Protocol" > expand "Flags"

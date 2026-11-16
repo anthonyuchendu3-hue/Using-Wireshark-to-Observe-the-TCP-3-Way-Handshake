@@ -1,0 +1,23 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary and log files
+*.tmp
+*.log
+*.bak
+
+# Archives (build the ZIP outside the repo or ignore it)
+*.zip
+
+# Note: capture files (*.pcap) are NOT ignored on purpose.
+# The lab capture only contains traffic between the lab's virtual hosts.
+# If you ever capture real network traffic, do NOT commit it.

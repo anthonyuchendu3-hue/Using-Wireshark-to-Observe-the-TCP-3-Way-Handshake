@@ -1,0 +1,23 @@
+# Part 1: Prepare the Hosts to Capture the Traffic
+
+# [VM terminal] Start Mininet
+sudo lab.support.files/scripts/cyberops_topo.py
+
+# [Mininet CLI] Open terminals for H1 and H4
+xterm H1
+xterm H4
+
+# [H4 xterm] Start the web server
+/home/analyst/lab.support.files/scripts/reg_server_start.sh
+
+# [H1 xterm] Switch from root to the analyst user
+su analyst
+
+# [H1 xterm] Start the web browser (takes a few moments)
+firefox &
+
+# [H1 xterm] Capture 50 packets to capture.pcap
+sudo tcpdump -i H1-eth0 -v -c 50 -w /home/analyst/capture.pcap
+
+# [Firefox on H1] Quickly navigate to:
+# 172.16.0.40

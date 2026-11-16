@@ -1,0 +1,11 @@
+# Part 3: View the Packets using tcpdump
+
+# [New terminal] Open the manual page
+man tcpdump
+#   Inside man:  /-r   search for "-r"   |  n  next match  |  ?  search backward  |  q  quit
+
+# [Terminal] Show the first 3 TCP packets from the saved capture
+tcpdump -r /home/analyst/capture.pcap tcp -c 3
+
+# Optional: show more packets to see the whole handshake and what follows
+# tcpdump -r /home/analyst/capture.pcap tcp -c 10

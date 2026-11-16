@@ -1,0 +1,7 @@
+# Cleanup
+
+# [Mininet CLI, in the terminal used to start Mininet]
+quit
+
+# [VM terminal] Clean up processes started by Mininet (password prompt appears)
+sudo mn -c
